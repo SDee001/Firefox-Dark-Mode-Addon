@@ -1,0 +1,34 @@
+html.simple-dark-mode {
+  filter: invert(90%) hue-rotate(180deg);
+  background-color: #ffffff;
+}
+
+html.simple-dark-mode img,
+html.simple-dark-mode video,
+html.simple-dark-mode iframe,
+html.simple-dark-mode [style*="background-image"] {
+  filter: invert(100%) hue-rotate(180deg);
+}
+
+html.simple-dark-mode input[type="text"],
+html.simple-dark-mode input[type="password"],
+html.simple-dark-mode input[type="email"],
+html.simple-dark-mode textarea {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Adjust for specific elements if needed */
+html.simple-dark-mode [class*="logo"],
+html.simple-dark-mode [id*="logo"] {
+  filter: invert(100%) hue-rotate(180deg);
+}
+
+/* Fine-tune for better readability */
+html.simple-dark-mode {
+  text-shadow: 0 0 0;
+}
+
+html.simple-dark-mode * {
+  border-color: #666;
+}
