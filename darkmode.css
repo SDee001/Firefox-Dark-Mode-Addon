@@ -1,34 +1,31 @@
-html.simple-dark-mode {
-  filter: invert(90%) hue-rotate(180deg);
-  background-color: #ffffff;
+.sophisticated-dark-mode {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-html.simple-dark-mode img,
-html.simple-dark-mode video,
-html.simple-dark-mode iframe,
-html.simple-dark-mode [style*="background-image"] {
-  filter: invert(100%) hue-rotate(180deg);
+.sophisticated-dark-mode * {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+  border-color: #333 !important;
 }
 
-html.simple-dark-mode input[type="text"],
-html.simple-dark-mode input[type="password"],
-html.simple-dark-mode input[type="email"],
-html.simple-dark-mode textarea {
-  background-color: #333;
-  color: #fff;
+.sophisticated-dark-mode a {
+  color: #bb86fc !important;
 }
 
-/* Adjust for specific elements if needed */
-html.simple-dark-mode [class*="logo"],
-html.simple-dark-mode [id*="logo"] {
-  filter: invert(100%) hue-rotate(180deg);
+.sophisticated-dark-mode img,
+.sophisticated-dark-mode video {
+  filter: brightness(0.8) contrast(1.2);
 }
 
-/* Fine-tune for better readability */
-html.simple-dark-mode {
-  text-shadow: 0 0 0;
+.sophisticated-dark-mode input[type="text"],
+.sophisticated-dark-mode input[type="password"],
+.sophisticated-dark-mode textarea {
+  background-color: #333 !important;
+  color: #e0e0e0 !important;
 }
 
-html.simple-dark-mode * {
-  border-color: #666;
+.sophisticated-dark-mode button,
+.sophisticated-dark-mode select {
+  background-color: #333 !important;
+  color: #e0e0e0 !important;
 }
